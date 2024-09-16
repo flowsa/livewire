@@ -27,9 +27,15 @@ class HandleRequests extends Mechanism
 
     function getUpdateUri()
     {
-        return (string) str(
-            route($this->updateRoute->getName(), [], false)
-        )->start('/');
+        
+        // Livewire updating routes not working for us as
+        // we have a {team} parameter
+        // this is a temp fix until bug has been solved
+        return '/flow-communications/livewire/update';
+
+        // return (string) str(
+        //     route($this->updateRoute->getName(), [], false)
+        // )->start('/');
     }
 
     function skipRequestPayloadTamperingMiddleware()
