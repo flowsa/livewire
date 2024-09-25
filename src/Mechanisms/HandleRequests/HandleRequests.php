@@ -31,11 +31,15 @@ class HandleRequests extends Mechanism
         // Livewire updating routes not working for us as
         // we have a {team} parameter
         // this is a temp fix until bug has been solved
-        return '/flow-communications/livewire/update';
 
-        // return (string) str(
-        //     route($this->updateRoute->getName(), [], false)
-        // )->start('/');
+        $route =
+        (string) str(
+            route($this->updateRoute->getName(), [
+                'team' => app('team')->slug,
+            ], false)
+        )->start('/');
+
+        return $route;
     }
 
     function skipRequestPayloadTamperingMiddleware()
