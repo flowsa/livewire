@@ -130,7 +130,7 @@ class BrowserTest extends BrowserTestCase
 
     public function test_can_lazy_load_component_using_route()
     {
-        $this->tweakApplication(function() {
+        $this->beforeServingApplication(function() {
             Livewire::component('page', Page::class);
             Route::get('/', Page::class)->lazy()->middleware('web');
         });
@@ -265,7 +265,7 @@ class BrowserTest extends BrowserTestCase
             </div>
             HTML; }
         }, 'child' => new class extends Component {
-            public function mount() {
+            public function mount($myParameter) {
                 sleep(1);
             }
             public function placeholder(array $params = []) {

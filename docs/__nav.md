@@ -34,6 +34,8 @@ HTML Directives:
     wire:model: { uri: /docs/wire-model, file: /wire-model.md }
     wire:loading: { uri: /docs/wire-loading, file: /wire-loading.md }
     wire:navigate: { uri: /docs/wire-navigate, file: /wire-navigate.md }
+    wire:current: { uri: /docs/wire-current, file: /wire-current.md }
+    wire:cloak: { uri: /docs/wire-cloak, file: /wire-cloak.md }
     wire:dirty: { uri: /docs/wire-dirty, file: /wire-dirty.md }
     wire:confirm: { uri: /docs/wire-confirm, file: /wire-confirm.md }
     wire:transition: { uri: /docs/wire-transition, file: /wire-transition.md }
@@ -42,14 +44,15 @@ HTML Directives:
     wire:offline: { uri: /docs/wire-offline, file: /wire-offline.md }
     wire:ignore: { uri: /docs/wire-ignore, file: /wire-ignore.md }
     wire:replace: { uri: /docs/wire-replace, file: /wire-replace.md }
+    wire:show: { uri: /docs/wire-show, file: /wire-show.md }
     wire:stream: { uri: /docs/wire-stream, file: /wire-stream.md }
+    wire:text: { uri: /docs/wire-text, file: /wire-text.md }
 Concepts:
     Morphing: { uri: /docs/morphing, file: /morph.md }
     Hydration: { uri: /docs/hydration, file: /hydration.md }
     Nesting: { uri: /docs/understanding-nesting, file: /understanding-nesting.md }
 Advanced:
     Troubleshooting: { uri: /docs/troubleshooting, file: /troubleshooting.md }
-    Package Development: { uri: /docs/package-dev, file: /package-development.md }
     Security: { uri: /docs/security, file: /security.md }
     JavaScript: { uri: /docs/javascript, file: /javascript.md }
     Synthesizers: { uri: /docs/synthesizers, file: /synthesizers.md }
